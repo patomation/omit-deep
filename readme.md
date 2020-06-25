@@ -9,6 +9,11 @@ The goal here is to have a vanilla project starter that provides webpack and the
 npm install
 ```
 
+## Run project
+```
+npm run start
+```
+
 ## Build project
 ```
 npm run build
