@@ -5,10 +5,15 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "webpack-dev-server --mode development --hot --open",
+    "compile:tests": "tsc --project tsconfig.test.json",
+    "compile:app": "tsc --project tsconfig.json",
+    "compile": "run-s compile:tests compile:app",
     "build": "webpack --mode production",
     "lint": "./node_modules/.bin/eslint **/*.{js,ts,tsx}",
-    "test": "ava",
-    "coverage": "nyc ava"
+    "unit": "ava",
+    "unit:coverage": "nyc ava",
+    "test": "run-s lint compile unit",
+    "coverage": "run-s lint compile unit:coverage"
   },
   "keywords": [
     "typescript",
@@ -17,16 +22,13 @@
   "author": "Patrick Kelly",
   "license": "ISC",
   "ava": {
-    "extensions": [
-      "ts"
-    ],
-    "require": [
-      "ts-node/register"
+    "files": [
+      "build/**/*.test.js"
     ]
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "commit-msg": "commitlint --config commitlint.config.json -E HUSKY_GIT_PARAMS",
       "pre-commit": "npm run lint && npm run test"
     }
   },
@@ -48,6 +50,7 @@
     "html-webpack-plugin": "4.3.0",
     "husky": "4.2.5",
     "node-sass": "4.14.1",
+    "npm-run-all": "4.1.5",
     "nyc": "15.1.0",
     "sass-loader": "9.0.3",
     "style-loader": "1.2.1",

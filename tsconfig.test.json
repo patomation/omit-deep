@@ -1,12 +1,9 @@
 {
-  "extends": "tsconfigs/browser-executable",
+  "extends": "tsconfigs/nodejs-executable",
   "compilerOptions": {
     "outDir": "build"
   },
   "include": [
-    "src/**/*"
-  ],
-  "exclude": [
     "src/**/*.test.ts"
   ]
 }
