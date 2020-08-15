@@ -1,3 +1,10 @@
+// Webpack hot reload type fix
+declare const module: {
+  hot: {
+    accept: () => void
+  }
+}
+
 declare module '*.jpg'
 declare module '*.jpeg'
 declare module '*.png'
