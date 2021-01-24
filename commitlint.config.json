@@ -4,6 +4,7 @@
   ],
   "rules": {
     "scope-enum": [2, "always", [
+      "dev",
       "typescript"
     ]]
   }
