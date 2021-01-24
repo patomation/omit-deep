@@ -20,7 +20,7 @@
     "coverage": "run-s lint compile unit:coverage",
     "prepublish": "run-s lint test build",
     "release": "standard-version",
-    "publish": "git push --follow-tags && npm publish"
+    "publish": "git push --follow-tags"
   },
   "keywords": [
     "typescript"
