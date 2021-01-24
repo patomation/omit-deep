@@ -6,6 +6,7 @@
     "scope-enum": [2, "always", [
       "deps",
       "dev",
+      "doc",
       "typescript"
     ]]
   }
