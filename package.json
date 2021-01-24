@@ -1,7 +1,7 @@
 {
-  "name": "npm-package-starter",
+  "name": "@patomation/omit-deep",
   "version": "0.0.0",
-  "description": "Javascript + Webpack vanilla starter project",
+  "description": "A utility to clone an object without certain keys",
   "public": true,
   "main": "build/index.js",
   "types": "build/index.d.ts",

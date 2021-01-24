@@ -1,12 +1,35 @@
-# NPM Package Starter
+# Omit Deep
+A utility to clone an object without certain keys
+This is great to lazily send data back to a graphql server without having to worry about the __typename having to be in your input.
 
-The goal here is to have a vanilla project starter that includes typescript. In addition it has commit lint and ava for testing. So not so vanilla. More of a minimal preset. You get to chose your preferred front end framework. Enjoy making things.
+# Usage
+```javascript
+import { omitDeep } from '@patomation/omit-deep'
 
-![flavorite](https://raw.githubusercontent.com/patomation/vanilla-starter/master/public/favicon.ico)
+const before = {
+  __typename: 'remove',
+  keep: 'me',
+  deep: {
+    __typename: 'remove',
+    keep: 'this one'
+  }
+}
+// Remove __typename key
+const after = omitDeep(before, '__typename')
+// After = 
+// {
+//   keep: 'me',
+//   deep: {
+//     keep: 'this one'
+//   }
+// }
+```
+Only the key you specify is removed.
+
 
 ## Install
 ```
-npm install
+npm i @patomation/omit-deep
 ```
 
 ## Test
