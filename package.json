@@ -1,6 +1,6 @@
 {
   "name": "@patomation/omit-deep",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A utility to clone an object without certain keys",
   "public": true,
   "main": "build/index.js",
