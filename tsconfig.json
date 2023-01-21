@@ -1,19 +1,11 @@
 {
-  "extends": "tsconfigs/browser-executable",
+  "extends": "tsconfigs/nodejs-executable",
   "compilerOptions": {
     "outDir": "build",
     "declaration": true,
     "sourceMap": true,
-    "target": "es5",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "strictNullChecks": true
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "src/**/*.test.ts"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test.ts"]
 }

@@ -1,0 +1,6 @@
+CHANGELOG.md
+dist
+lib
+build
+*\ copy*
+.commitlintrc.json
