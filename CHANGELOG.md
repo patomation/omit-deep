@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/patomation/omit-deep/compare/v0.0.1...v1.0.0) (2023-01-21)
+
+
+### Bug Fixes
+
+* **dev:** publish script publishes twice ([e932d5e](https://github.com/patomation/omit-deep/commit/e932d5ee82e7038f9d97fafb3e8dccababec4d69))
+
 ### 0.0.1 (2021-01-24)
 
 
