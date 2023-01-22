@@ -6,3 +6,5 @@ coverage
 dist
 build
 *\ copy*
+*~
+*.tgz

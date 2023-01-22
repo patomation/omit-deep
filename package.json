@@ -25,7 +25,8 @@
     "watch:test": "onchange 'src/**/*.ts' -- npm run test",
     "release": "standard-version",
     "publish": "git push --follow-tags",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier": "prettier --write ."
   },
   "keywords": [
     "typescript"

@@ -1,14 +1,22 @@
 {
-  "extends": ["@commitlint/config-conventional"],
+  "extends": [
+    "@commitlint/config-conventional"
+  ],
   "rules": {
-    "scope-enum": [2, "always", [
-      "deps",
-      "dev",
-      "doc",
-      "index",
-      "test",
-      "typescript",
-      "update"
-    ]]
+    "scope-enum": [
+      2,
+      "always",
+      [
+        "bin",
+        "deps",
+        "dev",
+        "doc",
+        "index",
+        "package",
+        "test",
+        "typescript",
+        "update"
+      ]
+    ]
   }
 }
