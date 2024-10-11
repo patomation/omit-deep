@@ -10,7 +10,8 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "files": [
-    "build"
+    "build",
+    "src"
   ],
   "scripts": {
     "compile:tests": "tsc --project tsconfig.test.json",
