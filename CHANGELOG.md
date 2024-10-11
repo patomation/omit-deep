@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/patomation/omit-deep/compare/v1.0.1...v1.0.2) (2024-10-11)
+
+
+### Bug Fixes
+
+* **package:** fixes [#1](https://github.com/patomation/omit-deep/issues/1) where the src in not included in bundle ([c821536](https://github.com/patomation/omit-deep/commit/c8215361218e43fc36d9c00b64ec80e7374fb188))
+
 ### [1.0.1](https://github.com/patomation/omit-deep/compare/v1.0.0...v1.0.1) (2023-01-22)
 
 ## [1.0.0](https://github.com/patomation/omit-deep/compare/v0.0.1...v1.0.0) (2023-01-21)

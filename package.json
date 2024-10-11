@@ -1,6 +1,6 @@
 {
   "name": "@patomation/omit-deep",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A utility to clone an object without certain keys",
   "repository": {
     "type": "git",
@@ -10,7 +10,8 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "files": [
-    "build"
+    "build",
+    "src"
   ],
   "scripts": {
     "compile:tests": "tsc --project tsconfig.test.json",
