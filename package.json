@@ -1,6 +1,6 @@
 {
   "name": "@patomation/omit-deep",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A utility to clone an object without certain keys",
   "repository": {
     "type": "git",
